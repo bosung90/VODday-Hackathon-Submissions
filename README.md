@@ -3,8 +3,14 @@ This is a sample submission repository for Open Data Hackathon Projects. You can
 
 ##Team Name
 *Choose a fun team name!*
+Awesome Hawks
 
-
+##Team Members
+- Eric Kim, 
+- Mitchell Ang, 
+- Scott, 
+- Seiko, 
+- Tadaaki Sun, tadaakisun27@hotmail.com
 
 ##Vancouver Open Data Day Challenge
 *What VODDay Challenge is your project focusing on? (See the [2017 VODday Challenges](https://www.opendatabc.ca/pages/2017-vodday-vancouver-open-data-day#challenges).)*
