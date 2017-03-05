@@ -184,8 +184,8 @@
             }
 
             // For each route, display summary information.
-            for (var j = 0; j < route.legs.length; j++) {
-              var i = j; // route.waypoint_order[j];
+            for (var j = 0; j < route.waypoint_order.length; j++) {
+              var i = route.waypoint_order[j];
               var routeSegment = i + 1;
 
               summaryPanel.innerHTML += '<image style="width:100px; height:100px; float:left; position:absolute;" src=' + getImageByIndex(i) + ' />';
