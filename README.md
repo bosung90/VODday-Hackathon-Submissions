@@ -5,10 +5,10 @@ This is a sample submission repository for Open Data Hackathon Projects. You can
 Awesome Hawks
 
 ##Team Members
-- Eric Kim, 
-- Mitchell Ang, 
-- Scott Wardle, 
-- Seiko Igi, 
+- Eric Kim, bosung90@gmail.com
+- Mitchell Ang, ang_mitchell@yahoo.com
+- Scott Wardle, swardle@gmail.com
+- Seiko Igi, seikoigi@gmail.com
 - Tadaaki Sun, tadaakisun27@hotmail.com
 
 ##Vancouver Open Data Day Challenge
