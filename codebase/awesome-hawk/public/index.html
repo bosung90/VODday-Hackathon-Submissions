@@ -144,10 +144,50 @@
             var route = response.routes[0];
             var summaryPanel = document.getElementById('directions-panel');
             summaryPanel.innerHTML = '';
+
+            function getImageByIndex(index) {
+              const imagesByIndex = [
+                'The Tribe Space'
+                'Vancouver Aquarium'
+                'FlyOver Canada'
+                'WESTCOAST Sightseeing'
+                'Stanley Park'
+                'Historic Gastown'
+                'Kitsilano Beach'
+                'Museum of Vancouver'
+                'China Town'
+                'Robson Street'
+                'Nine O’Clock Gun'
+                'Totem Poles'
+                'Brockton Point'
+                'Prospect Point Lookout'
+                'Third Beach'
+                'Teahouse in Stanley Park'
+                'English Bay Beach'
+                'Granville Island Public Market'
+                'Coal Harbour'
+                'Commercial Drive'
+                'Davie Village'
+                'Gastown'
+                'Granville Street'
+                'Punjabi Market'
+                'Shaughnessy'
+                'Yaletown'
+                'Dr. Sun Yat Sen Clasical Chinese Garden'
+                'UBC Botanical Garden'
+                'Museum of Anthropology'
+                'Vancouver Art Gallery'
+                'Science World at Telus World of Science'
+                'H.R. MacMillan Space Center'
+                'Burnaby Village Museum'
+              ]
+              return imagesByIndex[index]
+            }
+
             // For each route, display summary information.
             for (var j = 0; j < route.waypoint_order.length; j++) {
               var i = route.waypoint_order[j];
-              var routeSegment = i +1;
+              var routeSegment = i + 1;
               summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
                   '</b><br>';
               summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
