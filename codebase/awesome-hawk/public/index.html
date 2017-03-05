@@ -145,8 +145,8 @@
             var summaryPanel = document.getElementById('directions-panel');
             summaryPanel.innerHTML = '';
             // For each route, display summary information.
-            for (var j = 0; j < route.waypoint_order.length; j++) {
-              var i = route.waypoint_order[j];
+            for (var j = 0; j < route.length; j++) {
+              var i = j;
               var routeSegment = i +1;
               summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
                   '</b><br>';
