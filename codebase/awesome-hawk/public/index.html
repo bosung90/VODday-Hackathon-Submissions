@@ -47,6 +47,11 @@
         background-color: #FFEE77;
         padding: 10px;
       }
+
+      .text-description {
+        position: relative;
+        padding-left: 108px;
+      }
     </style>
   </head>
   <body>
@@ -188,13 +193,14 @@
             for (var j = 0; j < route.waypoint_order.length; j++) {
               var i = route.waypoint_order[j];
               var routeSegment = i + 1;
-              summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
-                  '</b><br>';
-              summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
-              summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
-              summaryPanel.innerHTML += route.legs[i].duration.text + '<br>';
-              summaryPanel.innerHTML += '<image style="width:100px; height:100px;" src=https://s-media-cache-ak0.pinimg.com/originals/c6/25/b2/c625b23f31d6e38e56559243f7228f7c.jpg /> <br>';
-              summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
+
+              summaryPanel.innerHTML += '<image style="width:100px; height:100px; float:left; position:absolute;" src=' + getImageByIndex(i) + ' />';
+              summaryPanel.innerHTML += '<div class="text-description">' + '<b>Route Segment: ' + routeSegment +
+                  '</b><br></div>';
+              summaryPanel.innerHTML += '<div class="text-description">' + route.legs[i].start_address + ' to <br></div>';
+              summaryPanel.innerHTML += '<div class="text-description">' + route.legs[i].end_address + '<br></div>';
+              summaryPanel.innerHTML += '<div class="text-description">' + route.legs[i].duration.text + '<br></div>';
+              summaryPanel.innerHTML += '<div class="text-description">' + route.legs[i].distance.text + '<br><br></div>';
             }
           } else {
             window.alert('Directions request failed due to ' + status);
