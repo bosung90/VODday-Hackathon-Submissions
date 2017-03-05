@@ -68,7 +68,6 @@
       <option value="Stanley Park, Vancouver">Stanley Park</option>
       <option value="Historic Gastown, Vancouver">Historic Gastown</option>
       <option value="Kitsilano Beach, Vancouver">Kitsilano Beach</option>
-      <option value="Museum of Vancouver, Vancouver">Museum of Vancouver</option>
       <option value="China Town, Vancouver">China Town</option>
       <option value="Robson Street, Vancouver">Robson Street</option>
       <option value="Nine O’Clock Gun, Vancouver">Nine O’Clock Gun</option>
@@ -82,10 +81,8 @@
       <option value="Coal Harbour, Vancouver">Coal Harbour</option>
       <option value="Commercial Drive, Vancouver">Commercial Drive</option>
       <option value="Davie Village, Vancouver">Davie Village</option>
-      <option value="Gastown, Vancouver">Gastown</option>
       <option value="Granville Street, Vancouver">Granville Street</option>
       <option value="Punjabi Market, Vancouver">Punjabi Market</option>
-      <option value="Shaughnessy, Vancouver">Shaughnessy</option>
       <option value="Yaletown, Vancouver">Yaletown</option>
       <option value="Dr. Sun Yat Sen Clasical Chinese Garden, Vancouver">Dr. Sun Yat Sen Clasical Chinese Garden</option>
       <option value="UBC Botanical Garden, Vancouver">UBC Botanical Garden</option>
@@ -147,39 +144,36 @@
 
             function getImageByIndex(index) {
               const imagesByIndex = [
-                'The Tribe Space',
-                'Vancouver Aquarium',
+                'https://s3-media3.fl.yelpcdn.com/bphoto/rJwDgue1nC_fDoAEAMdm1g/o.jpg',
+                'https://opendatabc.slack.com/files/seikoigi/F4D3LETK2/aquarium.jpg',
                 'https://opendatabc.slack.com/files/seikoigi/F4D4HEKPT/canada_place_landing.jpg',
-                'WESTCOAST Sightseeing',
-                'Stanley Park',
-                'Historic Gastown',
-                'Kitsilano Beach',
-                'Museum of Vancouver',
-                'China Town',
+                'https://westcoastsightseeing.com/wp-content/uploads/2016/04/View-from-Sea-Vancouver-Zodiac-Sea-Vancouver-Photographer-B-Caissie.jpg',
+                'http://vancouver.ca/images/cov/feature/Stanley-Park-Seawall-biking-720-250px.jpg',
+                'https://opendatabc.slack.com/files/seikoigi/F4D4EML3B/gastown.jpg',
+                'https://media-cdn.tripadvisor.com/media/photo-s/02/77/71/d3/kitsilano.jpg',
+                'https://www.homeaway.ca/info/files/live/sites/ca/files/shared/discover/north-americas-oldest-chinatown/vancouver-chinatown-gate--ts-2014-09-30T11%3A09%3A24_743-05%3A00.jpg',
                 'https://opendatabc.slack.com/files/seikoigi/F4EF2N3B8/robson-street-vancouver-bc.jpg',
-                'Nine O’Clock Gun',
-                'Totem Poles',
-                'Brockton Point',
-                'Prospect Point Lookout',
-                'Third Beach',
-                'Teahouse in Stanley Park',
-                'English Bay Beach',
-                'Granville Island Public Market',
-                'Coal Harbour',
-                'Commercial Drive',
-                'Davie Village',
-                'Gastown',
-                'Granville Street',
-                'Punjabi Market',
-                'Shaughnessy',
-                'Yaletown',
-                'Dr. Sun Yat Sen Clasical Chinese Garden',
-                'UBC Botanical Garden',
-                'Museum of Anthropology',
-                'Vancouver Art Gallery',
-                'Science World at Telus World of Science',
-                'H.R. MacMillan Space Center',
-                'Burnaby Village Museum'
+                'https://s-media-cache-ak0.pinimg.com/originals/1e/4b/d8/1e4bd8e463af9ce24854aa5a2ac90d3f.jpg',
+                'https://s-media-cache-ak0.pinimg.com/originals/c6/25/b2/c625b23f31d6e38e56559243f7228f7c.jpg',
+                'http://d2ciprw05cjhos.cloudfront.net/files/v3/styles/gs_large/public/2013/02/8515260438_184485fbde_b.jpg?itok=vJuy5bHc',
+                'http://l7.alamy.com/zooms/fd6fa8023d99462f8a31b7d1cfa38a82/garden-at-prospect-point-lookout-in-stanley-park-vancouver-british-bamrxa.jpg',
+                'https://i.ytimg.com/vi/B7yFTgZZo0Q/maxresdefault.jpg',
+                'https://www.vancouverdine.com/wp-content/uploads/2015/07/TH_Patio.jpg',
+                'http://www.insidevancouver.ca/wp-content/uploads/2016/02/800px-English_Bay_6429675067.jpg',
+                'https://opendatabc.slack.com/files/seikoigi/F4EEZ75UN/granvile.jpg',
+                'https://res-5.cloudinary.com/simpleview/image/fetch/c_fill,f_auto,h_434,q_75,w_675/http://res.cloudinary.com/simpleview/image/upload/v1453849694/clients/vancouverbc/Coal_Harbour__4af968af-6ff9-4bfa-869f-6fd43bffee4c.jpg',
+                'http://www.bcrobyn.com/wp-content/uploads/2012/11/IMG_7460edit.jpg',
+                'https://res-5.cloudinary.com/simpleview/image/upload/c_limit,f_auto,q_65,w_845/v1/clients/vancouverbc/Davie_Village_f16f4d59_7d2a_412a_87c2_44f85ff19b00_05d4d3b1-4fc4-4cf8-9e3e-c652f07575b1.jpg',
+                'http://www.vancouvertour.net/images/granville_street_vancouver.jpg',
+                'http://604now.com/wp-content/uploads/2016/04/little-india-vancouver.jpg',
+                'http://www.craigveroni.ca/static/media/med/118_696b49ff_Yaletown.jpg',
+                'http://www.citr.ca/wp-content/uploads/2010/06/chinese-garden_vancouver01.jpg',
+                'https://www.makemytrip.com/travel-guide/media/dg_image/ooty/Botanical-Gardens-Adam-Jones-Adam63-Wikkimedia.jpg',
+                'http://moa.ubc.ca/wp-content/uploads/2014/09/scroll1920x1080-architecture3.jpg',
+                'https://opendatabc.slack.com/files/seikoigi/F4EEZCHEJ/artgallery.jpg',
+                'http://logohit.net/ww/ww-content/uploads/2015/02/Science_World_ww.jpg',
+                'https://upload.wikimedia.org/wikipedia/commons/5/54/Van_museum_space_centre.jpg',
+                'http://www.vancouverattractions.com/files/File/myAssets/231/large/IMG_8632.jpg'
               ]
               return imagesByIndex[index]
             }
