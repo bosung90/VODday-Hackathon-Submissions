@@ -1,21 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react'
 
-class App extends Component {
+export class Container extends React.Component {
   render() {
+    if(!this.props.google) {
+      return <div>....loading</div>
+    }
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div style={styles.map}>
+        <Map google={this.props.google}
+          style={{width: '90%', height: '90%'}}
+          className={'map'}
+          zoom={14}
+          containerStyle={{}}
+          centerAroundCurrentLocation={true}
+        >
+          <Marker
+            name={'SOMA'}
+            position={{lat: 37.778519, lng: -122.405640}} />
+        </Map>
       </div>
-    );
+    )
+  }
+}
+const styles = {
+  map: {
+    width: '100vw',
+    height: '100vh'
   }
 }
 
-export default App;
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyAvXrnn09BFXAflNbdwa3mqHRAlEwoLBNQ'
+})(Container)
