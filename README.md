@@ -7,8 +7,8 @@ Awesome Hawks
 ##Team Members
 - Eric Kim, 
 - Mitchell Ang, 
-- Scott, 
-- Seiko, 
+- Scott Wardle, 
+- Seiko Igi, 
 - Tadaaki Sun, tadaakisun27@hotmail.com
 
 ##Vancouver Open Data Day Challenge
